@@ -1,2 +1,2 @@
-# Server-bot
-System Bot for your Server
+**Type** (`help`) **for Show all Commands**
+
