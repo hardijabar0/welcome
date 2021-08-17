@@ -1433,7 +1433,7 @@ client.on("message", (ncrTeam) => {
 --> AntiBots
 */
 
-let antibots = JSON.parse(fs.readFileSync('./Data/antibots.json', 'utf8'));//require antihack.json file
+let antibots = JSON.parse(fs.readFileSync('./antibots.json', 'utf8'));//require antihack.json file
 client.on('message', message => {
   if (message.content.startsWith(prefix + "antibots on")) {
     if (!message.channel.guild) return message.reply('**This Command Only For Servers**');
@@ -1481,7 +1481,7 @@ client.on("guildMemberAdd", member => {
   if (member.user.bot) return member.kick()
 })
 
-fs.writeFile("./Data/antibots.json", JSON.stringify(antibots), (err) => {
+fs.writeFile("./antibots.json", JSON.stringify(antibots), (err) => {
   if (err) console.error(err)
     .catch(err => {
       console.error(err);
@@ -1493,7 +1493,7 @@ fs.writeFile("./Data/antibots.json", JSON.stringify(antibots), (err) => {
 --> AntiLinks
 */
 
-let spread = JSON.parse(fs.readFileSync('./Data/antilinks.json' , 'utf8'));
+let spread = JSON.parse(fs.readFileSync('./antilinks.json' , 'utf8'));
  
  
 client.on('message', message => {
