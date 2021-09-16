@@ -25,7 +25,7 @@ const moment = require('moment');
 const request = require('request');
 const dateFormat = require('dateformat');
 const message = require('discord-reply');                 
-const prefix = ("kk-")
+const prefix = (config.PREFIX);
 
 /*
 --> Ready Settings
